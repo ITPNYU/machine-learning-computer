@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>ITP/IMA Machine Learning Computer</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+    html,
+    body {
+        border: 0;
+        margin: 0;
+        background: rgb(182, 95, 241);
+        background: linear-gradient(38deg,
+                rgb(205, 139, 249) 0%,
+                rgb(246, 137, 137) 50%,
+                rgba(252, 176, 69, 1) 100%);
+        color: black;
+        height: 100vh;
+        font-family: "Noto Sans", sans-serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: bold;
+    }
+
+    #center-column {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #computer-img {
+        height: 400px;
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    ul {
+        width: 80%;
+    }
+
+    li {
+        margin-bottom: 1em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .learn-more-link {
+        font-size: 14px;
+        color: blue;
+        text-decoration: none;
+        text-align: right;
+    }
+
+    .service-link {
+        text-transform: uppercase;
+        color: blue;
+        text-decoration: none;
+        font-weight: bold;
+        border: 2px dotted transparent;
+        /* Add an invisible border */
+    }
+
+    .service-link:hover {
+        border: 2px dotted yellow;
+    }
+
+    .llmouse {
+        position: absolute;
+        color: yellow;
+        rotate: 10;
+    }
+
+    #squeaky-overlay {
+        pointer-events: none;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 10;
+        overflow: hidden;
+    }
+</style>
+
+<body>
+    <div id="center-column">
+        <h1>ITP/IMA Machine Learning Computer</h1>
+        <h2>Hello and welcome!</h2>
+        <img src="./itp-ml-computer.jpg" id="computer-img" />
+        <p>
+            This website is hosted on a fairly large desktop computer in the South
+            Faculty office of ITP/IMA. This computer is available for the ITP/IMA
+            community to experiment and learn on projects related to machine learning.
+        </p>
+        <p>
+            This computer has a number of ways to interface with it. Please see the
+            list below to learn more:
+        </p>
+
+        <h2>Current Applications</h2>
+        <ul>
+            <li>
+                <div><a class="service-link" target="_blank" rel="noopener noreferrer"
+                        href="http://itp-ml.itp.tsoa.nyu.edu:4000/public-dashboards/8ea5b7bd69804150a6c661c5bb54bb78?var-PROMETHEUS_DS=PBE40D95A8B8C9AF4">Energy
+                        Monitoring</a> - This energy monitoring dashboard provides up-to-date stats about this machine's
+                    energy usage.</div>
+                <a class="learn-more-link" target="_blank" rel="noopener noreferrer"
+                    href="https://hubblo-org.github.io/scaphandre-documentation/index.html">Learn
+                    More</a>
+            </li>
+
+
+            <li>
+                <div><a class="service-link" target="_blank" rel="noopener noreferrer"
+                        href="http://itp-ml.itp.tsoa.nyu.edu:1234">JupyterHub</a> - This tool
+                    allows you to run interactive python notebooks on this machine's hardware from your web browser.
+                </div>
+
+
+                <a class="learn-more-link" target="_blank" rel="noopener noreferrer" href="https://jupyter.org/">Learn
+                    More</a>
+            </li>
+            <li>
+                <div><a class="service-link" target="_blank" rel="noopener noreferrer"
+                        href="http://itp-ml.itp.tsoa.nyu.edu:11434">Ollama</a> - This tool allows you
+                    to run inference on open-source large
+                    language models through an API.</div> <a class="learn-more-link" target="_blank"
+                    rel="noopener noreferrer" href="https://github.com/ollama/ollama/blob/main/docs/api.md">Learn
+                    More</a>
+            </li>
+
+
+
+            <li>
+                <div><a class="service-link" target="_blank" rel="noopener noreferrer"
+                        href="http://itp-ml.itp.tsoa.nyu.edu:8188/">ComfyUI</a> - This ui will let you design and
+                    execute advanced stable diffusion pipelines. </div> <a class="learn-more-link" target="_blank"
+                    rel="noopener noreferrer" href="https://github.com/comfyanonymous/ComfyUI">Learn
+                    More</a>
+            </li>
+
+            <li>
+                <div><a class="service-link" target="_blank" rel="noopener noreferrer"
+                        href="http://itp-ml.itp.tsoa.nyu.edu:7860/">Stable Diffusion WebUI</a> - This tool allows you
+                    to run inference on generative image models
+                    through a web-based graphical interface.</div> <a class="learn-more-link" target="_blank"
+                    rel="noopener noreferrer" href="https://github.com/AUTOMATIC1111/stable-diffusion-webui">Learn
+                    More</a>
+            </li>
+            <li>
+                <div><a class="service-link" target="_blank" rel="noopener noreferrer"
+                        href="http://itp-ml.itp.tsoa.nyu.edu:3000">Open
+                        WebUI</a> - This
+                    tool allows you to access large language
+                    models (LLMs), retrieval-augumented generation pipelines and more
+                    through a chat interface.</div>
+
+                <a class="learn-more-link" target="_blank" rel="noopener noreferrer"
+                    href="https://github.com/open-webui/open-webui">Learn More</a>
+            </li>
+            <li>
+                <div><a class="service-link" target="_blank" rel="noopener noreferrer"
+                        href="http://itp-ml.itp.tsoa.nyu.edu:3000">Something Else?</a> - If you have an idea for a project you'd
+                    like to see on this computer, please reach out!</div>
+
+                <a class="learn-more-link" target="_blank" rel="noopener noreferrer"
+                    href="https://github.com/open-webui/open-webui">Learn More</a>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        console.log('Hello!  Look around to learn more!');
+
+        // snippet to get human keyboard press timings for the mouse intro
+        // let timings = [];
+        // let startTime = Date.now();
+        // document.addEventListener('keydown', (ev) => {
+        //     if (ev.key !== "Shift") {
+
+        //         let now = Date.now();
+        //         let elapsedTime = now - startTime;
+        //         timings.push({ key: ev.key, delay: elapsedTime });
+        //         startTime = now;
+        //         console.log(timings);
+        //     }
+        // })
+
+
+        class SqueakyTheMouse {
+            constructor() {
+                this.overlay = document.createElement('div');
+                this.overlay.id = "squeaky-overlay";
+                document.body.appendChild(this.overlay);
+
+                this.welcomeTextAndTimings = [{ "key": "H", "delay": 250 }, { "key": "e", "delay": 200 }, { "key": "l", "delay": 72 }, { "key": "l", "delay": 152 }, { "key": "o", "delay": 184 }, { "key": "!", "delay": 312 }, { "key": " ", "delay": 288 }, { "key": " ", "delay": 136 }, { "key": "I", "delay": 232 }, { "key": "'", "delay": 136 }, { "key": "m", "delay": 80 }, { "key": " ", "delay": 144 }, { "key": "S", "delay": 368 }, { "key": "q", "delay": 296 }, { "key": "u", "delay": 96 }, { "key": "e", "delay": 304 }, { "key": "a", "delay": 64 }, { "key": "k", "delay": 176 }, { "key": "y", "delay": 184 }, { "key": " ", "delay": 144 }, { "key": "t", "delay": 144 }, { "key": "h", "delay": 72 }, { "key": "e", "delay": 136 }, { "key": " ", "delay": 32 }, { "key": "m", "delay": 184 }, { "key": "o", "delay": 88 }, { "key": "u", "delay": 128 }, { "key": "s", "delay": 8 }, { "key": "e", "delay": 48 }, { "key": ".", "delay": 232 }, { "key": " ", "delay": 184 }, { "key": " ", "delay": 112 }, { "key": "C", "delay": 288 }, { "key": "l", "delay": 96 }, { "key": "i", "delay": 48 }, { "key": "c", "delay": 168 }, { "key": "k", "delay": 56 }, { "key": " ", "delay": 144 }, { "key": " ", "delay": 120 }, { "key": "a", "delay": 240 }, { "key": "r", "delay": 128 }, { "key": "o", "delay": 120 }, { "key": "u", "delay": 40 }, { "key": "n", "delay": 72 }, { "key": "d", "delay": 112 }, { "key": " ", "delay": 120 }, { "key": "t", "delay": 120 }, { "key": "o", "delay": 112 }, { "key": " ", "delay": 144 }, { "key": "a", "delay": 240 }, { "key": "s", "delay": 120 }, { "key": "k", "delay": 88 }, { "key": " ", "delay": 152 }, { "key": "m", "delay": 112 }, { "key": "e", "delay": 136 }, { "key": " ", "delay": 64 }, { "key": "a", "delay": 168 }, { "key": "b", "delay": 88 }, { "key": "o", "delay": 104 }, { "key": "u", "delay": 96 }, { "key": "t", "delay": 48 }, { "key": " ", "delay": 144 }, { "key": "m", "delay": 152 }, { "key": "a", "delay": 104 }, { "key": "c", "delay": 88 }, { "key": "h", "delay": 40 }, { "key": "i", "delay": 128 }, { "key": "n", "delay": 72 }, { "key": "e", "delay": 64 }, { "key": " ", "delay": 112 }, { "key": "l", "delay": 112 }, { "key": "e", "delay": 96 }, { "key": "a", "delay": 72 }, { "key": "r", "delay": 120 }, { "key": "n", "delay": 112 }, { "key": "i", "delay": 104 }, { "key": "n", "delay": 104 }, { "key": "g", "delay": 72 }, { "key": ".", "delay": 616 }, { "key": ".", "delay": 144 }, { "key": ".", "delay": 136 }, { "key": " ", "delay": 520 }, { "key": "o", "delay": 168 }, { "key": "r", "delay": 264 }, { "key": " ", "delay": 104 }, { "key": "c", "delay": 160 }, { "key": "h", "delay": 64 }, { "key": "e", "delay": 120 }, { "key": "e", "delay": 224 }, { "key": "s", "delay": 280 }, { "key": "e", "delay": 64 }, { "key": "!", "delay": 416 }];
+                // this.welcomeText = "Hello!  I'm squeaky the mouse.  \n Click around to ask me about machine learning..."
+                this.welcomeTextIndex = 0;
+
+
+                this.icon = "🐁  ";
+                // this.mouseIconEl = document.createElement('p');
+                // this.mouseIconEl.innerText = this.icon;
+                // this.overlay.appendChild(this.mouseIconEl);
+                // this.mouseIconEl.classList.add('llmouse')
+                // this.mouseIconEl.style.bottom = "100px";
+                // this.mouseIconEl.style.left = "100px";
+
+
+                this.textBox = document.createElement('p');
+                this.textBox.innerText = this.icon;
+                this.overlay.appendChild(this.textBox);
+                this.textBox.classList.add('llmouse')
+                this.textBox.style.bottom = "100px";
+                this.textBox.style.left = "100px";
+                this.sayHello();
+
+                // document.addEventListener('pointermove', (ev) => this.onPointerMove(ev), false)
+
+                this.responses = [];
+
+                setInterval(() => this.update(), 50);
+            }
+
+            addResponse({ x, y }) {
+                // this.text = "🐁";
+                const el = document.createElement('p');
+                this.overlay.appendChild(el);
+                el.classList.add('llmouse')
+                el.style.top = y + "px";
+                el.style.left = x + "px";
+
+                this.responses.push({
+                    x: x,
+                    y: y,
+                    el: el,
+                    speedX: 0,
+                    speedY: 2
+                })
+                return this.responses.length - 1; // give index
+            }
+
+            sayHello() {
+                let next = this.welcomeTextAndTimings[this.welcomeTextIndex];
+                this.textBox.innerHTML += next.key;
+                this.welcomeTextIndex += 1;
+
+                if (this.welcomeTextIndex < this.welcomeTextAndTimings.length) {
+                    setTimeout(() => this.sayHello(), next.delay / 2);
+                }
+            }
+
+            updateReponse(index, text) {
+                this.responses[index].el.innerHTML += text;
+            }
+
+            update() {
+                this.rainfallResponses();
+            }
+
+            rainfallResponses() {
+                for (let i = 0; i < this.responses.length; i++) {
+                    const r = this.responses[i];
+                    r.y += r.speedY;
+                    r.el.style.top = r.y + "px";
+                }
+            }
+
+
+        }
+
+        //        const squeaky = new SqueakyTheMouse();
+
+        function getResults(ev) {
+
+            const url = 'http://itp-ml.itp.tsoa.nyu.edu:11434/api/generate';
+
+            let systemText = "You are Squeaky the Mouse, and you love cheese and machine learning. You love all cheeses and your favorite kind of cheese is Manchego. Respond in 25 words or less."
+            let promptText = "Hello!";
+
+            if (ev.target !== document.body) {
+                promptText += 'What is a project we could build together with this: ' + ev.target.innerText;
+            }
+
+            const data = {
+                model: 'llama3.1:8b',
+                prompt: promptText,
+                system: systemText,
+                stream: true,
+            };
+
+            const responseIndex = squeaky.addResponse({ x: ev.clientX, y: ev.clientY });
+
+            try {
+                fetch(url, {
+                    method: 'POST', // Use POST request
+                    headers: { 'Content-Type': 'application/json' }, // Set content type to JSON
+                    body: JSON.stringify(data), // Convert data object to JSON string
+                }).then(response => {
+                    const reader = response.body.getReader();
+
+                    // read() returns a promise that resolves when a value has been received
+                    reader.read().then(function pump({ done, value }) {
+                        if (done) {
+                            return;
+                        }
+                        // Otherwise do something here to process current chunk
+                        // Decode the Uint8Array into a string
+                        const decoder = new TextDecoder('utf-8');
+                        const jsonString = decoder.decode(value);
+                        const lines = jsonString.split('\n'); // split between JSON chunks, which sometimes arrive together
+
+
+
+                        for (let i = 0; i < lines.length - 1; i++) {
+                            let line = lines[i];
+                            try {
+                                const json = JSON.parse(line);
+                                const responseText = json.response;
+
+                                squeaky.updateReponse(responseIndex, responseText);
+                            } catch (err) {
+                                console.log('COULD NOT PARSE');
+                            }
+                        }
+
+
+                        return reader.read().then(pump);
+                    });
+
+                }).catch(error => {
+                    console.error('Error processing stream:', error);
+                });
+
+            } catch (err) {
+                console.log("Oops: ", err);
+            }
+        }
+
+        document.body.addEventListener('click', (ev) => {
+            //          getResults(ev);
+        }, false)
+    </script>
+</body>
+
+</html>
