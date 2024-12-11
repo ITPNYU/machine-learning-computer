@@ -126,6 +126,7 @@ scrape_configs:
 
     static_configs:
       - targets: ['scaphandre:8080']
+    fallback_scrape_protocol: PrometheusText1.0.0
 
   - job_name: 'gpu-metrics'
 
